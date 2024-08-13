@@ -1,0 +1,27 @@
+{
+  "name": "remote-mfe",
+  "shared": [
+    {
+      "packageName": "react",
+      "outFileName": "react.UZNAk2ocHb.js",
+      "requiredVersion": "^18.2.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "18.3.1"
+    },
+    {
+      "packageName": "react-dom",
+      "outFileName": "react_dom.NQ1rQRAyZU.js",
+      "requiredVersion": "^18.2.0",
+      "singleton": true,
+      "strictVersion": true,
+      "version": "18.3.1"
+    }
+  ],
+  "exposes": [
+    {
+      "key": "./ReactApp",
+      "outFileName": "ReactApp-6KV5HSXH.js"
+    }
+  ]
+}

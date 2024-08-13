@@ -1,38 +1,29 @@
 {
   "name": "react-mfe",
-  "version": "0.1.0",
-  "private": true,
-  "dependencies": {
-    "@testing-library/jest-dom": "^5.17.0",
-    "@testing-library/react": "^13.4.0",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
   "scripts": {
+    "build:remote": "tsc build/build-mfe1.ts --outDir dist && node dist/build-mfe1.js",
+    "start:remote": "live-server dist/react-mfe --port=3001 --cors",
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "npm run build:remote",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+  "dependencies": {
+    "@softarc/native-federation-runtime": "^2.0.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+  "devDependencies": {
+    "@softarc/native-federation": "^2.0.0",
+    "@softarc/native-federation-esbuild": "^2.0.9",
+    "@types/node": "^20.5.9",
+    "concurrently": "^8.2.1",
+    "esbuild": "^0.19.2",
+    "json5": "^2.2.3",
+    "live-server": "^1.2.2",
+    "typescript": "^5.2.2"
   }
 }
